@@ -7,8 +7,8 @@
 
 ## 📍 État actuel
 
-- **Jour en cours :** J1 (finalisation)
-- **Prochaine étape :** valider la question + pousser le repo GitHub → **J2 : sourcer les données**
+- **Jour en cours :** J1 ✅ terminé
+- **Prochaine étape :** J2 — sourcer les données (HDX / WHO / MoH)
 
 ## 🔒 Décisions verrouillées
 
@@ -24,7 +24,9 @@
 
 > Format : *fait · ce qui a coincé · prochaine micro-étape*
 
-- **J1** — Cadrage : maladie + question + structure repo + environnement. *(à compléter)*
+- **J1** — Cadrage complet : maladie + question + repo GitHub poussé
+  (LeGraciE/mpox-rdc-analyse) + venv + requirements.txt.
+  Imprévu : venv poussé par erreur → corrigé (git rm --cached + .gitignore). ✅
 - **J2** —
 - **J3** —
 - **J4** —
