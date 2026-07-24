@@ -7,8 +7,8 @@
 
 ## 📍 État actuel
 
-- **Jour en cours :** J1 ✅ terminé
-- **Prochaine étape :** J2 — sourcer les données (HDX / WHO / MoH)
+-- **Jour en cours :** J2 (terminé)
+- **Prochaine étape :** J3 — télécharger la série complète des sitreps + auditer les trous
 
 ## 🔒 Décisions verrouillées
 
@@ -27,7 +27,12 @@
 - **J1** — Cadrage complet : maladie + question + repo GitHub poussé
   (LeGraciE/mpox-rdc-analyse) + venv + requirements.txt.
   Imprévu : venv poussé par erreur → corrigé (git rm --cached + .gitignore). ✅
-- **J2** —
+- **J2** —ources : HDX écarté pour les cas (pas de Mpox RDC par province),
+  retenu pour le fond de carte COD-AB. Source validée = sitreps hebdo INSP
+  (PDF, ReliefWeb), tableau 1 ligne = 1 province.
+  *Ce qui a coincé :* deux fausses pistes avant la bonne (WHO trop agrégé, HDX vide).
+  *Prochaine micro-étape :* auditer la continuité de la série de sitreps.
+
 - **J3** —
 - **J4** —
 - **J5** — 🏁 Bilan 1
@@ -44,7 +49,9 @@
 
 > Note ici les trucs à débloquer (ex. installation `geopandas`/`camelot`, connexion PostgreSQL…)
 
--
+- En-tête **multi-niveaux** dans les tableaux sitrep → à gérer à l'extraction Docling
+- Cumuls potentiellement révisés à la baisse → différences négatives possibles
+- Sitreps manquants → risque de faux pics dans la courbe
 
 ---
 
